@@ -1,0 +1,4 @@
+import { Link } from 'react-router-dom';
+export function NotFoundPage() {
+    return <main className="flex min-h-[70vh] items-center justify-center bg-slate-50 px-4 py-12"><section className="max-w-xl text-center"><img src={`${import.meta.env.BASE_URL}route.png`} alt="Route Posts" className="mx-auto mb-5 h-20 w-20 object-contain"/><p className="text-sm font-bold uppercase tracking-[.25em] text-blue-600">404 · Page not found</p><h1 className="mt-3 text-4xl font-black text-slate-900 sm:text-5xl">We lost that page</h1><p className="mt-4 text-slate-600">The link may be broken, or the page may have moved.</p><Link to={localStorage.getItem('token') ? '/feed' : '/registration'} className="mt-7 inline-flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-bold text-white hover:bg-blue-700">Go back home <i className="fa-solid fa-arrow-right"/></Link></section></main>;
+}

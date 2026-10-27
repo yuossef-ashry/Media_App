@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import 'tailwindcss';
+
+:root {
+  color: #0f172a;
+  background: #f0f2f5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --main-color: #eee;
+  --secondary-color: #333;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; min-height: 100%; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+img { display: block; }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading-spinner { animation: spin .8s linear infinite; }
+
+@utility container {
+  margin-inline: auto;
+}
+
+.fa-solid, .fa-regular, .fa-brands {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex: 0 0 auto;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  -webkit-mask: var(--icon-svg) center / contain no-repeat;
+  mask: var(--icon-svg) center / contain no-repeat;
+}
+.fa-solid.fa-arrow-left { --icon-svg: url('/icons/solid/arrow-left.svg'); }
+.fa-solid.fa-arrow-right { --icon-svg: url('/icons/solid/arrow-right.svg'); }
+.fa-solid.fa-arrow-up { --icon-svg: url('/icons/solid/arrow-up.svg'); }
+.fa-solid.fa-camera { --icon-svg: url('/icons/solid/camera.svg'); }
+.fa-solid.fa-check-double { --icon-svg: url('/icons/solid/check-double.svg'); }
+.fa-solid.fa-chevron-down { --icon-svg: url('/icons/solid/chevron-down.svg'); }
+.fa-solid.fa-earth-americas { --icon-svg: url('/icons/solid/earth-americas.svg'); }
+.fa-solid.fa-ellipsis { --icon-svg: url('/icons/solid/ellipsis.svg'); }
+.fa-solid.fa-expand { --icon-svg: url('/icons/solid/expand.svg'); }
+.fa-solid.fa-eye { --icon-svg: url('/icons/solid/eye.svg'); }
+.fa-solid.fa-eye-slash { --icon-svg: url('/icons/solid/eye-slash.svg'); }
+.fa-solid.fa-heart { --icon-svg: url('/icons/solid/heart.svg'); }
+.fa-solid.fa-house { --icon-svg: url('/icons/solid/house.svg'); }
+.fa-solid.fa-key { --icon-svg: url('/icons/solid/key.svg'); }
+.fa-solid.fa-share { --icon-svg: url('/icons/solid/share.svg'); }
+.fa-solid.fa-thumbs-up { --icon-svg: url('/icons/solid/thumbs-up.svg'); }
+.fa-solid.fa-user-plus { --icon-svg: url('/icons/solid/user-plus.svg'); }
+.fa-solid.fa-users { --icon-svg: url('/icons/solid/users.svg'); }
+.fa-solid.fa-wand-magic-sparkles { --icon-svg: url('/icons/solid/wand-magic-sparkles.svg'); }
+.fa-solid.fa-xmark { --icon-svg: url('/icons/solid/xmark.svg'); }
+.fa-regular.fa-bell { --icon-svg: url('/icons/regular/bell.svg'); }
+.fa-regular.fa-bookmark { --icon-svg: url('/icons/regular/bookmark.svg'); }
+.fa-regular.fa-comment { --icon-svg: url('/icons/regular/comment.svg'); }
+.fa-regular.fa-envelope { --icon-svg: url('/icons/regular/envelope.svg'); }
+.fa-regular.fa-face-smile { --icon-svg: url('/icons/regular/face-smile.svg'); }
+.fa-regular.fa-file-lines { --icon-svg: url('/icons/regular/file-lines.svg'); }
+.fa-regular.fa-image { --icon-svg: url('/icons/regular/image.svg'); }
+.fa-regular.fa-newspaper { --icon-svg: url('/icons/regular/newspaper.svg'); }
+.fa-regular.fa-pen-to-square { --icon-svg: url('/icons/regular/pen-to-square.svg'); }
+.fa-regular.fa-thumbs-up { --icon-svg: url('/icons/regular/thumbs-up.svg'); }
+.fa-regular.fa-trash-can { --icon-svg: url('/icons/regular/trash-can.svg'); }
+.fa-regular.fa-user { --icon-svg: url('/icons/regular/user.svg'); }
+.fa-brands.fa-facebook-f { --icon-svg: url('/icons/brands/facebook-f.svg'); }
+.fa-brands.fa-github { --icon-svg: url('/icons/brands/github.svg'); }
+.fa-brands.fa-instagram { --icon-svg: url('/icons/brands/instagram.svg'); }
